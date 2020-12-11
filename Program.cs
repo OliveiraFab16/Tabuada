@@ -1,4 +1,5 @@
 ﻿using System;
+using Figgle;
 
 namespace Tabuada
 {
@@ -7,16 +8,19 @@ namespace Tabuada
         static void Main(string[] args)
         {  
             int Numero;
-                                   
-            Console.WriteLine("----HOJE IREMOS APRENDER A TABUADA----");
-            Console.WriteLine("Digite um Número: ");
-           
+                                                                                  
+            Console.WriteLine("");
+
+            Console.WriteLine(FiggleFonts.Puffy.Render("Digite Um Numero: "));
+                       
             Numero = int.Parse(Console.ReadLine());
             Console.WriteLine();
-                        
+              
+                                  
             if (Numero <=1)
-            {           
-            Console.Write("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 1 ENTÃO VAMOS LA!!!");
+            {
+            Console.ForegroundColor = ConsoleColor.Magenta;             
+            Console.WriteLine("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 1 ENTÃO VAMOS LA!!!");
             Console.WriteLine("1 X 0 = 0");
             Console.WriteLine("1 X 1 = 1");
             Console.WriteLine("1 X 2 = 2");
@@ -29,11 +33,13 @@ namespace Tabuada
             Console.WriteLine("1 X 9 = 9");
             Console.WriteLine("1 X 10 = 10");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
             }
 
             else if (Numero <=2)
             {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;  
             Console.WriteLine("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 2 ENTÃO VAMOS LA!!!");
             Console.WriteLine("2 X 0 = 0");
             Console.WriteLine("2 X 1 = 2");
@@ -47,11 +53,13 @@ namespace Tabuada
             Console.WriteLine("2 X 9 = 18");
             Console.WriteLine("2 X 10 = 20 ");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
             }
             
             else if (Numero <=3)
-            {                          
+            { 
+            Console.ForegroundColor = ConsoleColor.Green;                           
             Console.WriteLine("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 3 ENTÃO VAMOS LA!!!");
             Console.WriteLine("3 X 0 = 0");
             Console.WriteLine("3 X 1 = 3 ");
@@ -65,11 +73,13 @@ namespace Tabuada
             Console.WriteLine("3 X 9 = 27");
             Console.WriteLine("3 X 10 = 30");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
             }
 
             else if (Numero <=4)
-            {           
+            {
+            Console.ForegroundColor = ConsoleColor.Blue;             
             Console.WriteLine("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 4 ENTÃO VAMOS LA!!!");
             Console.WriteLine("4 X 0 = 0");
             Console.WriteLine("4 X 1 = 4 ");
@@ -83,12 +93,14 @@ namespace Tabuada
             Console.WriteLine("4 X 9 = 36");
             Console.WriteLine("4 X 10 = 40");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
             }
 
            else if (Numero <=5)
 
-           {               
+           {
+            Console.ForegroundColor = ConsoleColor.Cyan;                
             Console.WriteLine("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 5 ENTÃO VAMOS LA!!!");
             Console.WriteLine("5 X 0 = 0");
             Console.WriteLine("5 X 1 = 5 ");
@@ -102,12 +114,14 @@ namespace Tabuada
             Console.WriteLine("5 X 9 = 45");
             Console.WriteLine("5 X 10 = 50");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
            }
       
            else if (Numero <=6)
 
-           {              
+           {       
+            Console.ForegroundColor = ConsoleColor.Yellow;        
             Console.WriteLine("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 6 ENTÃO VAMOS LA!!!");
             Console.WriteLine("6 X 0 = 0");
             Console.WriteLine("6 X 1 = 6 ");
@@ -121,12 +135,14 @@ namespace Tabuada
             Console.WriteLine("6 X 9 = 54");
             Console.WriteLine("6 X 10 =60");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
            }
 
           else if (Numero <=7)
 
-          {           
+          { 
+            Console.ForegroundColor = ConsoleColor.Black;          
             Console.WriteLine("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 7 ENTÃO VAMOS LA!!!");
             Console.WriteLine("7 X 0 = 0");
             Console.WriteLine("7 X 1 = 7 ");
@@ -140,12 +156,14 @@ namespace Tabuada
             Console.WriteLine("7 X 9 = 63");
             Console.WriteLine("7 X 10 =70");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
            }
 
           else if (Numero <=8)
 
           {
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 8 ENTÃO VAMOS LA!!!");
             Console.WriteLine("8 X 0 = 0");
             Console.WriteLine("8 X 1 = 8 ");
@@ -159,12 +177,14 @@ namespace Tabuada
             Console.WriteLine("8 X 9 = 72");
             Console.WriteLine("8 X 10 =80");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
            } 
 
            else if (Numero <=9)
 
-           {            
+           {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;            
             Console.WriteLine("OTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 9 ENTÃO VAMOS LA!!!");
             Console.WriteLine("9 X 0 = 0");
             Console.WriteLine("9 X 1 = 9");
@@ -178,12 +198,14 @@ namespace Tabuada
             Console.WriteLine("9 X 9 = 81");
             Console.WriteLine("9 X 10 =90");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
            } 
 
             else if (Numero <=10)
 
-          {            
+          { 
+            Console.ForegroundColor = ConsoleColor.DarkRed;          
             Console.WriteLine("ÓTIMO VOCÊ ESCOLHEU A TABUADA DO NUMERO 10 ENTÃO VAMOS LÁ!!!");
             Console.WriteLine("10 X 0 = 0");
             Console.WriteLine("10 X 1 = 10 ");
@@ -197,6 +219,7 @@ namespace Tabuada
             Console.WriteLine("10 X 9 = 90");
             Console.WriteLine("10 X 10 =100");
             Console.WriteLine("Pressione ENTER para sair!");
+            Console.ResetColor();
             Console.ReadKey();
           }
 
